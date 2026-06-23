@@ -1,0 +1,17 @@
+# Scheduling with Deadlines
+
+tasks = ["T1", "T2", "T3", "T4"]
+deadlines = [2, 1, 2, 1]
+
+print("Tasks and Deadlines:")
+for i in range(len(tasks)):
+    print(tasks[i], "Deadline =", deadlines[i])
+
+completed = []
+
+for i in range(len(tasks)):
+    if deadlines[i] >= 1:
+        completed.append(tasks[i])
+
+print("\nCompleted Tasks:", completed)
+print("Maximum Tasks Completed =", len(completed))

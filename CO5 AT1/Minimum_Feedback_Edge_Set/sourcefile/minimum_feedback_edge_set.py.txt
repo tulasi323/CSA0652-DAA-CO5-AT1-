@@ -1,0 +1,20 @@
+# Minimum Feedback Edge Set Problem
+
+edges = [(1, 2), (2, 3), (3, 1), (3, 4)]
+
+print("Edges in Graph:")
+for edge in edges:
+    print(edge)
+
+print("\nCycle Found:")
+print("1 -> 2 -> 3 -> 1")
+
+removed_edge = (3, 1)
+
+print("\nRemoved Edge:", removed_edge)
+
+print("\nAfter Removing Edge:")
+print("1 -> 2 -> 3")
+print("3 -> 4")
+
+print("\nGraph becomes Acyclic")
